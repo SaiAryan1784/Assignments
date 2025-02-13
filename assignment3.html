@@ -61,7 +61,14 @@
         <label for="Address">Address</label>
         <br><br>
         <textarea name="address" id="address" cols="30" rows="10"></textarea>
-        <input type="submit" value="Submit">
+        <br>
+        <button type="submit" onclick="ThankYouPage()" value="Submit">Submit</button>
     </form>
 </body>
+<script>
+    function ThankYouPage(){
+        DOM = document.getElementsByTagName("body")[0];
+        DOM.innerHTML = "<h1>Thank you for filling the form</h1>";
+    }
+</script>
 </html>
